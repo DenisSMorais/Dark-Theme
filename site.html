@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dénis</title>
+    <style>
+        body{
+            font-family: Arial, Helvitica, sans-serif;
+            background-image: linear-gradient(45deg, rgb(36, 35, 35), blue);
+    }
+    div{
+        background-color: rgba(0,0,0,0.8);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 88px;
+        border-radius: 15px;
+        color: white;
+    }
+    input{
+        padding: 10px;
+        border: none;
+        font-size: 15px;
+    }
+    button{
+        background-color: cyan;
+        border: none;
+        padding: 12px;
+        width: 100%; 
+        border-radius: 10px;
+        font-family: Arial, Helvitica, sans-serif;
+    }
+    button:hover{
+        background-color: greenyellow;
+    }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Login</h1>
+    <input type="text" placeholder="EMAIL">
+    <br><br>
+    <input type="password" placeholder="SENHA">
+    <br><br>
+    <button onclick="abriralerta()">LOGIN</button>
+</body>
+<script>
+    function abriralerta() {
+        var email = document.getElementsByTagName("input")[0].value;
+        var senha = document.getElementsByTagName("input")[1].value;
+        alert("Email: " + email + "\nSenha: " + senha);
+    }
+</script>
+    
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:black;
+            color: white;
+            font: arial;
+            font-size: 20pt;
+        }
+        h1{
+            color: white;
+            font: arial;
+            font-size: 20pt;
+        }
+        p{
+            color: aqua;
+            font-size: 15pt;
+            font: arial;
+        }
+        div{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>MY name is Dénis</h1>
+    <p>Versao de textes<strong> DOM</strong> em javaScrypt.</p>
+    <div>Clique aqui</div>
+    <div id="mg">Clique em min</div>
+    <script>
+        var p1= document.getElementsByTagName("p")[0]
+        window.document.write("ESTA ESCITO ASSIM"+p1.innerText)
+        var d = window.document.getElementById("mg")
+        d = prompt("Qual o teu nome?")
+        alert("Bem vindo ao grupo "+ d + " macho man")
+    </script>
+</body>
+</html>

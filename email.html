@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página de Login</title>
+	<style>
+		body {
+			background-color: black;
+			color: blue;
+			font-family: Arial, sans-serif;
+		}
+		
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		
+		input[type="text"], input[type="password"] {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #444444;
+			color: blue;
+			font-size: 16px;
+		}
+		
+		input[type="submit"] {
+			padding: 10px 20px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: blue;
+			color: white;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Página de Login</h1>
+	<button>Entrar</button>
+	
+	<form>
+		<label for="email">E-mail:</label>
+		<input type="text" id="email" name="email">
+		
+		<label for="password">Senha:</label>
+		<input type="password" id="password" name="password">
+		
+		<input type="submit" value="Entrar">
+	</form>
+</body>
+</html>
