@@ -15,9 +15,10 @@ function adicionarTarefa() {
 
     var checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.onclick = function() {
-        listaTarefas.removeChild(novoItemLista);
-    }
+    // Este codigo estava apagando as tarefas quando o checkbox for pressionado.
+    //checkbox.onclick = function() {
+    //    listaTarefas.removeChild(novoItemLista);
+    //}
     }
     novoItemLista.appendChild(checkbox);
     novoItemLista.appendChild(document.createTextNode(tarefa));
